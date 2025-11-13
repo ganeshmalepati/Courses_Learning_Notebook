@@ -1,0 +1,15 @@
+Infrastructure Page  --> Projects, Compute storage, VM and other things 
+
+
+Self-Service Page --> Blueprint, Application, Runbooks, Market Place Manager , Projects, Policy Quotos
+
+Blueprint --> Single Vm, Multi VM.
+
+Application --> can manage application, update and edit the app
+
+Runbooks --> Can create runbook with actions and package install and uninstall action variables
+
+Marketplace Manager --> We can publish the BP into the market using this Marketplace Manager and Market-Place, Once we click publish on BP launch page then move to MPI and then click on approve in the market place manager then move to MarketPlace and then we can Deploy them in to MP.
+
+
+ 

@@ -1,0 +1,234 @@
+1. Basic Flask App Structure:
+
+Python
+
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+from flask import Flask, ...: Imports necessary Flask components.
+app = Flask(__name__): Creates a Flask application instance.
+@app.route('/'): Decorator that defines the URL route.
+def home():: The view function that handles the route.
+render_template('home.html'): Renders an HTML template.
+app.run(debug=True): Runs the development server (enable debug=False in production).
+
+
+2. Views (Handling Requests):
+
+Simple View:
+
+Python
+
+@app.route('/about')
+def about():
+    return 'This is the about page.'
+
+
+
+Passing Variables to Templates:
+
+Python
+
+@app.route('/user/<username>')
+def user_profile(username):
+    return render_template('user.html', name=username)
+In user.html, access the variable with {{ name }}.
+
+
+
+Handling POST Requests (Forms):
+
+Python
+
+@app.route('/submit', methods=['GET', 'POST'])
+def submit():
+    if request.method == 'POST':
+        name = request.form['name']
+        return f'Hello, {name}!'
+    return render_template('submit.html')
+
+
+request.method checks the request type.
+request.form accesses form data.
+
+
+
+Redirecting:
+
+Python
+
+@app.route('/old_page')
+def old_page():
+    return redirect(url_for('new_page'))
+
+@app.route('/new_page')
+def new_page():
+    return "This is the new page"
+
+
+3. Forms (HTML and Flask):
+
+HTML Form (submit.html):
+
+HTML
+
+<form method="POST" action="/submit">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+Using Flask-WTF (for more robust forms):
+
+Python
+
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+class MyForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+@app.route('/form', methods=['GET', 'POST'])
+def form():
+    form = MyForm()
+    if form.validate_on_submit():
+        return f'Hello, {form.name.data}!'
+    return render_template('form.html', form=form)
+
+
+Install: pip install Flask-WTF
+FlaskForm provides form handling.
+StringField, SubmitField are form fields.
+DataRequired() is a validation rule.
+form.validate_on_submit() checks if the form is valid.
+In form.html you can render the form using {{ form.name.label }} and {{ form.name() }}.
+
+
+
+4. url_for (Generating URLs):
+
+Basic Usage:
+
+Python
+
+url_for('home')  # Returns '/'
+url_for('user_profile', username='john')  # Returns '/user/john'
+In Templates:
+
+HTML
+
+<a href="{{ url_for('about') }}">About</a>
+url_for generates URLs based on view function names, which helps avoid hardcoding URLs and makes your application more maintainable.
+
+
+
+5. Type Hints (for Better Code):
+
+View Functions:
+
+Python
+
+from flask import Response
+from typing import Union
+
+@app.route('/greet/<string:name>')
+def greet(name: str) -> Union[str, Response]:
+    return f'Hello, {name}!'
+name: str indicates that name should be a string.
+-> Union[str, Response] indicates that the function returns either a string or a Flask Response object.
+Form Classes:
+
+Python
+
+class MyForm(FlaskForm):
+    name: StringField = StringField('Name', validators=[DataRequired()])
+    submit: SubmitField = SubmitField('Submit')
+Type hints improve code readability and help catch errors.
+Important Notes:
+
+Always install Flask: pip install Flask
+For Flask-WTF: pip install Flask-WTF
+For good security, never use debug=True in production.
+Templates are stored by default in a folder named "templates" in the same folder as your python file.
+Static files such as CSS and javascript files are stored by default in a folder named "static" in the same folder as your python file.
+This should give you a solid foundation for building Flask applications. Let me know if you have any specific questions!
+
+
+
+
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/report')
+def report():
+
+    lower_letter = False
+    upper_letter = False
+    num_end = False
+
+    username = request.args.get('username')
+
+    lower_letter = any(c.islower() for c in username)
+    upper_letter = any(c.isupper() for c in username)
+    num_end = username[-1].isdigit()
+
+    report = lower_letter and upper_letter and num_end
+
+
+    return render_template('report.html', report = report, lower = lower_letter, upper = upper_letter, num_end = num_end)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+<!-- {% extends 'base.html' %} {% block content %}
+<div class="jumbotron">
+  <h1>Please provide the username (that meets the requirments)</h1>
+  <form action="{{url_for('report')}}">
+    <label for="username">Username</label>
+    <input type="text" name="username" />
+    <input type="submit" value="Submit Form" />
+  </form>
+</div>
+{% endblock %} -->
+
+
+
+
+<!-- 
+{% extends 'index.html' %} {% block content %}
+<div class="jumbotron">
+  <p>Let's check your username!</p>
+  {% if report %}
+  <p>Your Username passed all the requirments</p>
+  {% else %}
+  <ul>
+    {% if not upper %}
+    <li>You didn't use a uppercase letter</li>
+    {% endif %} {% if not lower %}
+    <li>You didn't use a lowercase letter</li>
+    {% endif %} {% if not num_end %}
+    <li>You didn't end with a number</li>
+    {% endif %}
+  </ul>
+  {% endif %}
+</div>
+{% endblock %} -->
+

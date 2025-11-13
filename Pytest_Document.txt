@@ -1,0 +1,69 @@
+ABOUT PYTEST FRAMEWORK
+----------------------
+
+
+Py-test is a software testing framework in Python (like JUnit, TestNG for JAVA/JAVASCRIPT)
+
+Why Py-test
+
+Ease to Use
+Auto detect the tests
+Grouping/Marking tests
+Uses Python's assert keyword
+Can run tests written for unittest or nose
+CI/CD integration
+Good features - Fixtures, parameterize etc
+Good Community support and actively developed
+
+
+pip freeze > requirements.txt (which adds all the packages to the req file)
+
+
+
+The __init__.py file is used to create a same file name in multiple directories or in different files with same name.
+
+
+
+
+
+ABOUT FIXTURES
+--------------
+
+import pytest
+
+# Define a fixture
+@pytest.fixture
+def sample_data():
+    return {"a": 1, "b": 2, "c": 3}
+
+# Use the fixture in a test
+def test_key_exists(sample_data):
+    assert "a" in sample_data
+
+def test_value_check(sample_data):
+    assert sample_data["b"] == 2
+
+
+
+🔍 How It Works:
+@pytest.fixture marks the function as a fixture.
+sample_data is passed as an argument to the test functions.
+Pytest automatically calls the fixture and injects its return value into the test.
+
+
+
+Based on the Pytest in pytest.ini file we can add multiple markers and also we add the "addopts" which helps for showing the maxfailure in test file based on that the file stops after reaching certain failures of test, and for class we use python_classes = *Suite this will run all the classes that contains "Suite" in their class name.
+
+
+
+PYTEST - BDD 
+-------------
+
+pytest BDD(Behaviour-Data Driven) which is similar to TDD(Test-Data Driven) in BDD we use when, then, and for writing the test scenario and test features steps to build certain test cases to develop.
+
+
+pytest BDD is not a standalone framework
+It uses Gherkin language with "when", "Then", "Given", "And"
+Same steps can be use in multiple places or scenarios
+Test module starts with same as pytest like test_ or _test.py
+

@@ -1,0 +1,289 @@
+Python's built-in objects (such as strings, lists, dictionaries, sets, etc.) come with a wide range of methods. Here's a list of common methods for some of Python's built-in data types:
+
+1. String Methods (str)
+str.upper() - Converts all characters to uppercase.
+str.lower() - Converts all characters to lowercase.
+str.title() - Capitalizes the first letter of each word.
+str.strip() - Removes leading and trailing whitespaces.
+str.replace(old, new) - Replaces all occurrences of old with new.
+str.split(sep=None) - Splits the string into a list at the given separator.
+str.find(sub) - Returns the lowest index of the substring, or -1 if not found.
+str.isdigit() - Returns True if all characters are digits.
+str.join(iterable) - Joins a sequence of strings with the given separator.
+str.startswith(prefix) - Checks if the string starts with the given prefix.
+str.endswith(suffix) - Checks if the string ends with the given suffix.
+
+
+2. List Methods (list)
+list.append(x) - Adds item x to the end of the list.
+list.extend(iterable) - Extends the list by appending elements from an iterable.
+list.insert(i, x) - Inserts item x at position i.
+list.remove(x) - Removes the first occurrence of x from the list.
+list.pop([i]) - Removes and returns the item at the given position i (defaults to last item).
+list.index(x) - Returns the index of the first occurrence of x.
+list.count(x) - Returns the number of occurrences of x.
+list.sort() - Sorts the list in ascending order.
+list.reverse() - Reverses the elements of the list.
+list.copy() - Returns a shallow copy of the list.
+
+
+3. Dictionary Methods (dict)
+dict.get(key, default=None) - Returns the value associated with key, or default if not found.
+dict.keys() - Returns a view of the dictionary's keys.
+dict.values() - Returns a view of the dictionary's values.
+dict.items() - Returns a view of the dictionary's key-value pairs.
+dict.update(other) - Updates the dictionary with key-value pairs from another dictionary.
+dict.pop(key) - Removes and returns the value associated with key.
+dict.popitem() - Removes and returns the last key-value pair.
+dict.clear() - Removes all key-value pairs from the dictionary.
+dict.copy() - Returns a shallow copy of the dictionary.
+
+
+4. Set Methods (set)
+set.add(x) - Adds an element x to the set.
+set.remove(x) - Removes element x from the set, raises KeyError if not present.
+set.discard(x) - Removes element x from the set, does nothing if x is not found.
+set.pop() - Removes and returns an arbitrary element from the set.
+set.clear() - Removes all elements from the set.
+set.union(other_set) - Returns a new set with elements from both sets.
+set.intersection(other_set) - Returns a new set with elements common to both sets.
+set.difference(other_set) - Returns a new set with elements in the set that are not in other_set.
+set.symmetric_difference(other_set) - Returns a new set with elements in either set, but not both.
+
+
+5. Tuple Methods (tuple)
+tuple.count(x) - Returns the number of occurrences of x in the tuple.
+tuple.index(x) - Returns the index of the first occurrence of x in the tuple.
+
+
+6. File Methods (file object)
+file.read(size=-1) - Reads and returns the content of the file.
+file.readline() - Reads a single line from the file.
+file.readlines() - Reads all lines from the file and returns them as a list.
+file.write(string) - Writes the string to the file.
+file.writelines(lines) - Writes a list of lines to the file.
+file.seek(offset, whence=0) - Moves the file pointer to a specific location.
+file.tell() - Returns the current file pointer position.
+
+
+7. Range Methods (range)
+range.start - Returns the starting value of the range.
+range.stop - Returns the ending value of the range (exclusive).
+range.step - Returns the step size between elements in the range.
+
+
+8. Other Built-in Methods
+len(object) - Returns the length of an object (e.g., list, string, tuple).
+type(object) - Returns the type of an object.
+isinstance(object, class) - Checks if an object is an instance of a given class or subclass.
+sorted(iterable) - Returns a sorted list from the elements of any iterable.
+sum(iterable) - Returns the sum of elements in the iterable.
+min(iterable) - Returns the smallest item in the iterable.
+max(iterable) - Returns the largest item in the iterable.
+all(iterable) - Returns True if all elements in the iterable are truthy.
+any(iterable) - Returns True if any element in the iterable is truthy.
+
+
+
+
+When comparing the execution speed of list, tuple, dictionary, string, and set data types, here's a breakdown of how each one generally performs in terms of speed for various operations:
+
+1. List
+Time Complexity for Operations:
+Access by index: O(1)
+Append: O(1) (amortized)
+Search: O(n)
+Insertion/deletion (not at the end): O(n)
+Performance: Lists are versatile but relatively slower for operations like searching or inserting/removing items in the middle. They have a dynamic size, meaning their resizing can add overhead.
+
+2. Tuple
+Time Complexity for Operations:
+Access by index: O(1)
+Search: O(n)
+Insertion/deletion: O(n) (immutable, so cannot directly modify)
+Performance: Tuples are immutable, which means they can be more memory-efficient and faster for read-only operations compared to lists. However, you cannot modify a tuple, which limits its flexibility. They're slightly faster than lists because of this immutability and smaller memory footprint.
+3. Dictionary
+
+Time Complexity for Operations:
+
+Access by key: O(1) (average)
+Insertions/deletions: O(1) (average)
+Search by key: O(1) (average)
+Performance: Dictionaries use hash tables, which allow for very fast lookups, insertions, and deletions (O(1) on average). However, they come with overhead due to hashing, which might be slower than a list or tuple when only performing sequential operations (i.e., no key-based lookups).
+
+4. String
+Time Complexity for Operations:
+Access by index: O(1)
+Concatenation: O(n)
+Search: O(n)
+Performance: Strings in most languages (e.g., Python) are immutable, so any operation that modifies a string creates a new object. Concatenating strings repeatedly can be especially slow, as it requires creating a new string each time. They are slower than lists and tuples for many operations, especially when concatenating or modifying the string.
+
+5. Set
+Time Complexity for Operations:
+Membership test (check if an item exists): O(1) (average)
+Insertion/deletion: O(1) (average)
+Performance: Sets, like dictionaries, use hashing and provide fast membership tests and insertion/deletion (O(1) on average). They are faster than lists for operations like checking if an item is in the collection, but they don’t maintain order and don't allow duplicates.
+
+Summary of Performance Comparison:
+
+Fastest for Accessing/Searching:
+Dictionary and Set: O(1) on average for access and membership checks.
+Tuple and List: O(1) for index access, but lists are slower for searching.
+
+Fastest for Modifications:
+List: O(1) for appending at the end.
+Set: O(1) for adding/removing items (if no duplicates are involved).
+Dictionary: O(1) for adding/removing key-value pairs.
+
+Slowest for Concatenation/Modification:
+String: Due to immutability, concatenation is O(n) and can be slow if done repeatedly.
+
+
+Best Data Type Based on Use Case:
+For frequent access by index: List or Tuple (both are fast, but lists are mutable).
+For fast membership checks: Set (best for O(1) lookups).
+For fast lookups by key: Dictionary (O(1) average time for lookups).
+For read-only data: Tuple is faster than a list for immutable data.
+For string manipulations: String is the go-to, but be mindful of inefficient concatenation.
+
+Conclusion:
+Dictionary and Set tend to give faster performance for operations like lookups and insertions/deletions.
+Tuples are often faster than lists for read-only access, while lists are more versatile for general use, especially when frequent modifications are required.
+Strings are best when you need immutability, but avoid excessive string concatenation due to the overhead of creating new strings.
+
+
+
+
+Types of Modules in Python
+
+Standard Library Modules: These are the built-in modules that come with Python. Examples include math, sys, os, etc.
+
+User-defined Modules: These are modules that you create yourself to organize your code.
+
+Third-party Modules: These are external modules installed via package managers like pip. Examples include requests, numpy, pandas, etc.
+
+
+
+
+Built-in Modules in Python
+Python provides a large number of built-in modules that you can use in your programs without having to install anything extra. Here are some commonly used built-in modules:
+
+1. math - Provides mathematical functions.
+python
+Copy
+import math
+
+print(math.sqrt(16))  # 4.0
+print(math.pi)        # 3.141592653589793
+
+2. datetime - Provides classes for working with dates and times.
+python
+Copy
+import datetime
+
+now = datetime.datetime.now()
+print(now)  # 2025-02-04 12:34:56.789123
+
+# Creating a specific date
+birthday = datetime.date(1995, 5, 12)
+print(birthday)  # 1995-05-12
+
+3. random - Provides functions for generating random numbers.
+python
+Copy
+import random
+
+print(random.randint(1, 10))  # Random number between 1 and 10
+print(random.choice([1, 2, 3, 4]))  # Randomly choose from the list
+
+4. os - Provides functions for interacting with the operating system.
+python
+Copy
+import os
+
+print(os.getcwd())  # Current working directory
+os.mkdir('new_folder')  # Create a new directory
+
+5. sys - Provides functions and variables used to interact with the interpreter.
+python
+Copy
+import sys
+
+print(sys.version)  # Python version
+
+6. json - Used to work with JSON data.
+python
+Copy
+import json
+
+data = {"name": "Alice", "age": 30}
+json_str = json.dumps(data)
+print(json_str)  # '{"name": "Alice", "age": 30}'
+
+# Converting from JSON string to Python dictionary
+parsed_data = json.loads(json_str)
+print(parsed_data)  # {'name': 'Alice', 'age': 30}
+
+7. re - Provides functions for working with regular expressions.
+python
+Copy
+import re
+
+pattern = r"\d+"
+text = "The number is 123"
+matches = re.findall(pattern, text)
+print(matches)  # ['123']
+8. collections - Implements specialized container datatypes like Counter, deque, etc.
+python
+Copy
+
+import collections
+
+counter = collections.Counter(["apple", "banana", "apple"])
+print(counter)  # Counter({'apple': 2, 'banana': 1})
+
+Advantages of Using Modules
+Code Reusability: You can reuse code in different programs without duplication.
+Namespace Separation: Using modules helps avoid naming conflicts between different parts of the code.
+Organization: Modules help in organizing code into logical chunks, which improves readability and maintainability.
+Modularity: You can build a modular program by dividing tasks into different modules, making it easier to develop and test.
+
+Conclusion
+Modules in Python are essential for maintaining organized, reusable, and maintainable code. By creating your own modules or leveraging built-in ones, you can structure your programs more effectively. The built-in modules in Python cover a wide range of functionality, from file I/O to working with dates, times, and complex mathematical calculations.
+
+
+Encapsulation: Bundling data (attributes) and methods that operate on that data within a class. This helps keep the data safe and organized.
+
+Abstraction: Hiding the complex implementation details and showing only the essential interface. You don't need to know how the bark() method is implemented; you just call it.
+
+Inheritance: Creating new classes (derived classes) based on existing classes (base classes). The derived class inherits the attributes and methods of the base class and can add its own or override existing ones. This promotes code reuse and organization. (We'll explore this in more detail later).  
+ 
+Polymorphism: The ability of objects of different classes to respond to the same method call in their own specific ways. (Also a topic for more advanced discussion).
+
+
+
+Analogy:
+
+Think of an abstract class as a general contractor's blueprint for a house. The blueprint specifies the overall layout, the number of rooms, and the general requirements for the plumbing and electrical systems. However, the blueprint itself isn't a house. You can't live in a blueprint.  You need a builder (a concrete subclass) to take the blueprint and actually build a house (create an object) by filling in the details (implementing the abstract methods).
+
+In summary:
+
+The inability to create objects of abstract classes is a deliberate design choice to:
+
+Prevent the creation of incomplete objects.
+Enforce the implementation of abstract methods in subclasses.
+Reflect the abstract nature of the class itself.
+This mechanism ensures that you work with fully functional objects of concrete classes, rather than incomplete or undefined objects of abstract classes.
+
+
+Traceback (most recent call last):
+  File "c:\Users\maganesh\Downloads\Python\Classes_Objects.py", line 71, in <module>
+    shape = Shape()
+            ^^^^^^^
+TypeError: Can't instantiate abstract class Shape with abstract method area
+
+
+
+
+
+

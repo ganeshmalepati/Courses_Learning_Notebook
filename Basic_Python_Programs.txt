@@ -1,0 +1,68 @@
+Basic Python Programs
+
+Print “Hello, World!”
+Check if a number is even or odd
+Find the maximum of three numbers
+Swap two variables without using a third variable
+Check if a string is a palindrome
+Reverse a string
+Count vowels in a string
+Find factorial of a number
+Generate Fibonacci series up to n terms
+Check if a number is prime
+
+
+List and String Manipulation
+
+Concatenate two lists
+Remove duplicates from a list
+Find the second largest number in a list
+Sort a list without using built-in sort
+Merge two sorted lists
+Find common elements in two lists
+Count frequency of elements in a list
+Reverse a list
+Find the longest word in a sentence
+Capitalize the first letter of each word in a string
+
+
+Dictionary and Set Operations
+
+Count character frequency in a string using dictionary
+Merge two dictionaries
+Sort dictionary by values
+Check if two strings are anagrams
+Remove duplicates using set
+Find intersection and union of two sets
+Convert list to dictionary
+Find keys with maximum values in dictionary
+Group words with same characters (anagram groups)
+Check if a key exists in dictionary
+
+
+Loops and Conditionals
+
+Print numbers from 1 to 100 without using loop
+Print multiplication table of a number
+Sum of digits of a number
+Armstrong number check
+Print pattern (e.g., pyramid, triangle)
+Count number of digits in a number
+Find GCD and LCM of two numbers
+Check leap year
+Print prime numbers in a range
+Find sum of n natural numbers
+
+
+Functions and Recursion
+
+Recursive factorial
+Recursive Fibonacci
+Recursive palindrome check
+Recursive sum of digits
+Recursive binary search
+Lambda function usage
+Map, filter, reduce examples
+Decorator example
+Generator function example
+Closure function example
