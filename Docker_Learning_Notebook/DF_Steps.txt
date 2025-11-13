@@ -1,0 +1,19 @@
+To run and get interactive with command line using the docker command.
+
+1. Need to create a folder 
+2. Create a file on which lang you chose (e.g Python, java or etc)
+3. Then create Docker file with name "Dockerfile". 
+4. Use vim or other thing for vim (vim Dockerfile, click i, then :wq to exit from that)
+5. can check using cat Dockerfile 
+6. Dockerfile should be like 
+FROM python
+
+WORKDIR /app
+
+COPY . /app
+
+CMD ["python", "p_12.py"]
+
+7. Build the docker image using command "docker build -t filename ."
+8. we can check in images using "docker images"
+9. After build an image we can run the container using "docker run -it --name play_proj_container image_name(or)repository
