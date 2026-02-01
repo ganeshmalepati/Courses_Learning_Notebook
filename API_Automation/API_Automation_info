@@ -1,0 +1,62 @@
+API Automation Testing is the process of programmatically validating APIs (Application Programming Interfaces) to ensure:
+
+    Correct responses
+
+    Proper status codes
+
+    Accurate data
+
+    Secure authentication
+
+    Reliable error handling
+
+    Performance under load (advanced)
+
+Unlike UI automation, API tests are:
+
+    ⚡ Faster
+
+    🔐 More stable
+
+    🧠 Closer to backend logic
+
+    💰 Cheaper to maintain
+
+🔹 Why API Automation is Important?
+Reason Explanation
+Faster feedback No UI → faster execution
+Early bug detection Backend issues caught early
+Stable tests Less flaky than UI
+CI/CD friendly Easy to integrate
+Business logic validation Core functionality tested
+
+Refer ChatGpt:- Chat Requests Component in API :- https://chatgpt.com/c/69576da8-e840-8321-95c7-4cb6ce4c42a0
+
+The core difference between HTTP and HTTPS in APIs lies in security: HTTPS is the secure version of HTTP that uses encryption to protect data transmitted between a client and a server, while HTTP sends data in plain text [1, 2]
+
+When you make an API call over HTTPS, the interaction is protected by an SSL/TLS certificate [2, 3]:
+Handshake: The client and server perform a "handshake" to verify each other's certificates and agree on encryption methods [3].
+Encryption: Once the connection is established, all data exchanged (including sensitive information like API keys, user credentials, and request/response bodies) is encrypted [3]. This means that even if a third party intercepts the data, they cannot read it
+
+===============================================================================================================
+What is an API?
+
+A REST API exposes resources (payments, orders, users, etc.) via HTTP methods like GET, POST, PUT, DELETE using JSON payloads and status codes.
+​
+
+In payments, APIs cover create payment, authorize, capture, refund, list transactions, etc., with strict contracts and idempotency requirements.
+
+What is API test automation?
+
+Programmatically sending HTTP requests to the API and asserting on:
+
+Status codes (200, 201, 400, 401, 422, 500, etc.).
+
+Response body (fields, types, values, schema).
+
+Headers, cookies, auth behavior.
+
+Non‑functional aspects (latency, rate limits, etc.).
+​
+
+Tests run automatically in pipelines and can gate deployments.
