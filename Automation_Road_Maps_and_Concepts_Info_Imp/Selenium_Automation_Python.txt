@@ -1,0 +1,173 @@
+SELENIUM FRAMEWORK FOR AUTOMATION TESTING
+-----------------------------------------
+
+It's automation testing tool for web based application. It's completely open-source and no need to get license for it. 
+
+It's framework or set of libraries or Project or API for web based application testing. 
+
+
+N number of automation tools are there but 
+
+Features of Selenium
+--------------------
+Support multiple browsers 
+Support multiple code languages
+It's not language dependent.
+
+
+
+driver.close():- which close the single window of your current focus or current tab that your are in
+
+driver.quit():- It ends the entire session or closes all the windows that we have been opened in the tab. 
+
+
+--> Whenever we open any web browser everything present in the browser is an web-element.
+--> Selenium will interact with the HTML part of the browser.
+
+--> Synchronization :- Handling synchronization issues are imp in the web element. For example:- whenever we try to login to the Gmail we enter the username then it loads the password in the same page in nxt couple of seconds and shows to enter the password. so, in this case it tells "No such element found" exception because it causes synchronization issue means once one task is done the other will follow up and all. but here the nxt task is not done.
+
+
+--> Using time.sleep() is the hardcoded way of execution and it will halt the execution until the sleep time and the move to next step. Then what happens when the next step should be done in before the time.sleep() and after the time.sleep(). so, we need to use the implicit and explicit wait time.
+
+--> While we need to add 10sec wait for all the elements in DOM. But there are some elements which requires more than 10sec (to perform single operation or single step)to load and check the elements for that kind of scenario in the DOM or web browser we use "Explicit wait" i.e WebDriverWait(driver, 10).until() (which waits untill the element to be present)like this else we use implicit wait or global wait for all the element "driver.wait(10)". 
+
+'Code Example:- WebDriverWait(driver, 10).until(EC.element_to_be_clickable(By.XPATH, "path")'
+
+
+Difference between Implicit wait and Explicit wait:-
+
+Implicit is only applicable for the present conditions, every where the implicit wait is applicable but for the. we can implement the Implicit wait only once throughout the code. It's a dynamic wait.
+And for explicit wait  particular condition. "Explicit wait is always better as compared to implicit wait because we use it at particular condition and until the element is visible or clickable or any other operation we can perform and it won't wait for more time once the task is performed.
+
+
+DROPDOWNS TAG
+--------------
+
+A Dropdown element always contains a select tag and the options should be present inside that select tag.
+--> While working with drop down list we are gonna type the element. so, it's not 100% accuracy to get the exact element in the dropdown.
+
+
+
+So based on the below locators we can find and get interact with any element in the webbrowser
+-----------------------------LOCATORS--------------------------
+ id = 
+ name = 
+ css selector = 
+ xpath =  //tag-Name[@attribute="value"]
+ tagName =
+ className = 
+ linkText = 
+ partialLinkText =
+
+--> Out of 8 elements 6 are straight forward way like they will directly locate the element using it's value, While the remaining 2 locatorsf are Dynamically working like they certain syntax to follow and locate the element.
+--> When we use "*" i.e wildcard in the xpath that means any element in the DOM and it's identify the exact element.
+--> XAPTH are of three types Absolute , Relative and Partial Xpath
+--> Relative Xpath will only focus on the exact element with near root element.
+--> While Absolute Xpath will start from the root HTML to the exact element in the DOM.
+
+--> Concatenate of two Xpaths  //input[@name="identifierId"[@id="identifierId"]
+Both the xpath has been concatenated. we use the other way also like 
+//input[@name="identifierId" and @id="identifierId"]
+
+"//input[starts-with(@id, "iden")]" Used "starts-with" can identify it dynamically
+"//input[contains(@id, "iden")]" Used "contains" can identify it dynamically
+
+--> We can also create the XPath uniquely using the parent, sibling and child format.
+--> //input[@name="identifierId"]/parent::div[1] or //input[@name="identifierId"]/parent::div[2]                               for parent
+--> //input[@name="identifierId"]/following-sibling::div[1] or //input[@name="identifierId"]/following-sibling::div/div[3]     for sibling
+
+--> Another Way we can also use "contains" in the xpath like "//*[contains(text(), 'Signin')]" 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Selenium Imp Interview Prep Q&A
+-------------------------------
+
+🧠 What Are Frames & iframes?
+In HTML:
+
+A frame or iframe is a webpage inside another webpage.
+Selenium cannot directly interact with elements inside an iframe unless you switch into that frame.
+
+Think of it like:
+📌 You can’t press a button inside a room unless you first enter that room.
+
+🔍 Why Selenium Needs Switching?
+When a page has multiple frames:
+
+The browser displays everything together.
+❗ But Selenium interacts with only one DOM at a time.
+If the element is in a different frame → NoSuchElementException.
+
+=> Solution: Switch Selenium’s focus into the frame first.
+
+⭐ Basic Steps to Handle Frames in Selenium
+✔ Step 1: Locate the iframe
+Using:
+
+id
+name
+index
+webelement
+
+✔ Step 2: Switch into it
+driver.switch_to.frame("frameName")
+
+
+✔ Step 3: Perform actions inside frame
+driver.find_element(...).click()
+
+✔ Step 4: Exit frame
+Return back to:
+
+parent frame
+main page content
+
+driver.switch_to.default_content()      # go to main page
+driver.switch_to.parent_frame()         # one step back
+
+🧪 4 Ways to Switch to iframe (With Examples)
+1️⃣ Switch by index
+
+driver.switch_to.frame(0)
+
+2️⃣ Switch by name or ID
+driver.switch_to.frame("loginFrame")
+
+3️⃣ Switch using WebElement
+iframe = driver.find_element(By.XPATH, "//iframe[@src='bankLogin.html']")
+driver.switch_to.frame(iframe)
+
+⭐ Most stable and recommended for dynamic pages.
+
+
+🧠 Common Exceptions & Fixes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ErrorReasonFixNoSuchFrameExceptionWrong ID/name/indexVerify HTMLElementNotInteractableExceptionYou didn’t switch into frameswitch_to.frame()StaleElementReferenceExceptionDynamic iframes reloadWait + re-find iframe
+
+
+
