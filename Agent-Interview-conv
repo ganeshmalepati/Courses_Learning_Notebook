@@ -1,0 +1,347 @@
+
+Speaker 1
+Good evening.
+
+05:57:56 PM
+Speaker 2
+Hello and good evening . Ladies . Villefort . Road to join in this call . Yeah, sure. Yeah .
+
+06:01:08 PM
+Speaker 3
+Hello?
+
+06:01:14 PM
+Speaker 1
+Good evening. Hey .
+
+06:01:18 PM
+Speaker 2
+Good evening. How are you? Doing? Well. How are you? I am,
+
+06:01:23 PM
+Speaker 3
+good. Thank you. Um . So how I can call you ? Is it Ganesh? Yes. Ganesh . Okay, okay. Nice to meet you. So let me introduce myself . I'm the manager of the SK team. In data and analytics department. And we are looking for a data position . Uh, mostly we. Are, um. Our testing is focused on data lakes . Um, we also have a lot of new projects related to AI agents. So , uh, maybe in the end, you will have some questions and I'll explain in details . Uh, tell me when you are ready. This interview will be about your, experience, skills, about your characteristics. So if you already. We can start .
+
+06:02:19 PM
+Speaker 2
+Yeah, sure. Okay, good. So, um, let's start with overall introduction. Tell me about your experience and the latest project that you were working on . Yeah. So first of all, thank you for giving me this opportunity . I am Ganesh. And working as a software engineer at many with two years of experience in API, and UI automation testing . My primary expertise is in Python, by Selenium and Rest API automation using request module. In my current role I have been involved in , uh, designing , maintaining and scaling automation cases for business workflow and. I have , uh, I have contributed to the framework enhancement and then these are test automation, stability and CI CD integration. One of the projects I worked on was a cloud automation project where I have automated both UI and test cases for business workflow and achieving around 20 to 30% regression coverage. One of my key contribution was to reduce false files and stabilizing flaky test cases with better synchronization and element handling issues, and I also contributed to framework enhancement. Uh , by. Using the existing framework. By adding new functionality based upon the client environments, which improves the scalability and maintenance of the automation suits along with. Automation testing I have been working in a factory integration for continuous uh through. Jenkins for continuous integration, and I am also familiar with the foundation of this Jenkins Docker under AWS cloud and also additionally, I got an opportunity to work on a driven auto project where we validated anomaly detection and diagnosis project process. Uh, providing rack based grounding , analysis and remediation plans for that. So it is all over. It is like a auto project, but the sensors and apart from work, I enjoy playing badminton and table tennis, which helped me to gain focus, discipline and decision making. And also I love I love reading books like, uh uh, personal growth, like atomic orbits. And then Success Principle by and Tata. They are the inspiration for me . And that's a brief over , uh, introduction. About me. I think. Well, table tennis . Yeah . Uh, everyday will play a in. It's like in , in our, uh. In our, uh. Organization. We have some teams and they will conduct this, uh, tournament also .
+
+06:05:04 PM
+Speaker 3
+What have you got in the tournament ? I think some.
+
+06:05:17 PM
+Speaker 2
+Support players . And sometimes it could be third place because there is huge competition in that . Yeah, I think I started in my organization only I spent two years.
+
+06:05:26 PM
+Speaker 3
+Okay. Is playing table tennis as well. So I'm asking okay. Let's see . Uh. How you estimate your knowledge in Python out of ten. What you will. Name . Out of ten.
+
+06:05:40 PM
+Speaker 2
+An 8 to 9. I will give the score for running Python.
+
+06:05:44 PM
+Speaker 3
+Have you worked with pandas?
+
+06:05:47 PM
+Speaker 2
+Uh, could you please come again? Have you worked with pandas in Python? Yeah. Yes . So that has been used for data visualization and data analysis for us . Can I go ahead? More ? No.
+
+06:06:11 PM
+Speaker 3
+No, I want to see more. So what is lambda function ?
+
+06:06:44 PM
+Speaker 2
+Uh, so lambda function is like, a type of . So the traditional function we create in Python is like diff using dev . And we will, we will use return for the return values. So this lambda function is like a single uh single function which will arguments and expressions. So we can include these arguments like a lambda x, comma y and then colon. We can use this uh addition or subtraction or whatever it is. So we can use this lambda function in a single line. It is more flexible . And uh concise. Way so this can be used in MapReduce filter and other things . Where are you currently located . ? Currently I'm in . Andhra Pradesh.
+
+06:07:05 PM
+Speaker 3
+I have Hyderabad here. Why is that ? I have Hyderabad from the AJR. So you are not in Hyderabad ?
+
+06:07:19 PM
+Speaker 2
+I mean my hometown is uh. Andhra Pradesh, but my work location is Hyderabad.
+
+06:07:23 PM
+Speaker 3
+Okay, so you are currently working .
+
+06:07:26 PM
+Speaker 2
+Yeah, in in Hyderabad.
+
+06:07:31 PM
+Speaker 3
+So. Uh.
+
+06:07:48 PM
+Speaker 2
+What is your notice period? Yeah. Officially the notice period for my organization is 90 days. But right now I have been released from the project so we can negotiable it to the 30 days. Through knowledge transfer and other things. So that should be negotiable.
+
+06:07:54 PM
+Speaker 3
+So it's without pay out option. Just 30 days.
+
+06:07:56 PM
+Speaker 2
+Could you please come with it? Oh.
+
+06:08:02 PM
+Speaker 3
+It is officially 30 days right now without buy out option .
+
+06:08:05 PM
+Speaker 2
+Yeah, it should be.
+
+06:08:09 PM
+Speaker 3
+Okay.
+
+06:08:26 PM
+Speaker 2
+Exactly . Division between team members right now. So how many team members you have and what each one is responsible for ? So in my team, we have been there for. Five, around ten members. So each have been divided into different categories. So for me I have been working automation. Uh will related. To things so and also I have been integrated this automated testing into Jenkins pipeline. For reducing human effect. And it will give faster feedback. And then it will provide quick results. A better results .
+
+06:08:58 PM
+Speaker 1
+Okay. What is your estimate of your SQL knowledge ?
+
+06:09:06 PM
+Speaker 2
+Yeah. All the time. So for out of ten I have around 6 to 7 knowledge on MySQL .
+
+06:09:12 PM
+Speaker 1
+Okay. What is the difference between where and having .
+
+06:09:47 PM
+Speaker 2
+The. So where is users? Are the filtration purpose like rows before any probes are made by the group by close it filters like a individual records based upon special special conditions. Having used for a filter groups after the group by operation. So where is used before the group by operation and the having is used after the group by operation. To place condition on aggregated data like some counts, and then averages. So we are works on raw data and having works on aggregated results .
+
+06:09:51 PM
+Speaker 1
+Okay, are you familiar with windows function ?
+
+06:09:54 PM
+Speaker 2
+Windows?
+
+06:09:55 PM
+Speaker 1
+And others . Don't know . What are they in SQL queries ? Pro number. Rank then?
+
+06:10:09 PM
+Speaker 2
+Rank. Yeah, I know the basic knowledge about that . Yeah.
+
+06:10:20 PM
+Speaker 1
+Okay, so you do not have any experience with working on database testing . Or you have .
+
+06:10:30 PM
+Speaker 2
+Have you tested database? Yeah, I've gone to some database testing like, uh, using this SQL for both API and automation. Also . Sorry. What is regression testing? Yeah. So regression testing like suppose someone has been fixed there are previously. There are some bugs has been fixed and it does not affect the existing feature to make sure that the existing functionality still works fine without any disturbance. So it helps catch any new issues that might have been introduced and unintentionally due to code changes and usually automation plays a big role in this regression testing . To quickly run your suit or test cases covering critical workflows .
+
+06:11:10 PM
+Speaker 1
+Okay. So. Let's imagine you have an assignment to create a regression automation. Framework. And it is on . Let's say database though it will be in Data Lake. But let's say the same. So you have . Tables. It is database. So how what is.
+
+06:11:47 PM
+Speaker 2
+The approach for your regression. What exactly you are going to do okay. So first I understand the data structure and schema of the data lake. Like which. What what what type of data it is . And then I will design the test cases for validating key queries. And I use Python libraries like pandas test framework for. But .
+
+06:12:09 PM
+Speaker 1
+And . Okay . So what will be the workflow. How you are going? Has the table. So . What you are going to test. So yeah tell me more details .
+
+06:12:28 PM
+Speaker 2
+So for the regression testing what is the workflow you are seeing right through database . So first we can trigger the. Code changes into the version control like gate. Then it will attach to Jenkins using webhooks like event driven. So once it is event driven then the Jenkins will say there is some changes. So. Is the code changes will be done. This Jenkins will automatically trigger the build like run , test run fiscal database testing or UI testing. Our API testing. Then it will . Test those functionalities or whatever the components. Then it will give the results .
+
+06:13:05 PM
+Speaker 1
+Okay. Uh, what if you will be told you need to work on the reconciliation? Like quality checks and you have thousands of tables. What checks? You will include ?
+
+06:13:28 PM
+Speaker 3
+And .
+
+06:13:30 PM
+Speaker 1
+All. Lot of tables. Thousand of. And you need to automate.
+
+06:14:12 PM
+Speaker 2
+Do a quality check . What are your tests? Okay. So I will check the roles count in a source which is target tables like a data completeness. And then I will check the data accuracy like a validate key columns for count matches. Or within that set of acceptable thresholds, especially for numeric or database. And then we can go through with the schema validation. So it confirm the structure of the tables . Column names, data types. Everything should be fine or not . Or and we can check the null null checks like identify expected null or missing values which leads to the uh. Disturbance of this primary case. So primary key should be used for the uh. Identifying the table. And then . Um. And then so we can go to duplicate check. Also duplicate detection like, uh , unintended dupe.
+
+06:14:47 PM
+Speaker 1
+Records. And then we can go through retention integration. So these are the steps that we can follow up . . Are you using any helper right now. To. Answer this question.
+
+06:14:55 PM
+Speaker 2
+Are you looking into server. No, no I'm looking into the camera right .
+
+06:15:04 PM
+Speaker 1
+Okay. Uh, what this means AI engineer, I see a engineer and AI engineer. What it is . So can you engineer?
+
+06:15:07 PM
+Speaker 2
+It means we need to, uh. Use the. A knowledge inside this, automation. Like. Suppose the manual work is like a . Model . Okay, so if we take a team , here , uh. Teams as a, uh, application. So. It will show some suggestions, like if you say hi, then it will show the hello. To the response means it will provide some suggestions to you responses that that is how the AI will show the. Responses in the based upon their training . The quality means we will work on that. And we can go through some testing tools. This AI will help you to get further. Uh. Like a . How is it the one that is mentioned? Adjusting a gigantic AI based auto system? Yeah. So . So can I go through that or . Yes, yes. Tell me about details. Okay. So it is like a suppose we have developed apps. So in that we have different types of sensors like a battery pack, memory. And then voice report restart. And then we have thermal sensors. So by using these sensors data CSV data then it will go into the anomaly detection. So if there are any anomalies like uh any abnormal behavior has been there in the, uh data. So it will detect the anomalies once it is detected. The anomalies, it will move to the detection. I mean, correlation engine. So what this correlation engine will do . Yes. Yeah. So this correlation engine will do like, uh, it will correlate the anomalies. Like if you take one case ID suppose there is some IDs for the every laptop. So we take that ID and it will correlate with the all other sensors like fan sensor memory sensor, thermal sensor. So all these sensors have been correlated together. And it will move to the diagnosis step. So in this diagnosis steps it will go through with the LMS. And it will provide the limitation plan based upon the RAC . Uh. Data RAC grounding. So. It will get in touch with the RAC. So these RAC will fetch top k PDFs or top elements that have been matching with this. And then it will provide the remediation plan. I mean remediation or resolution steps for this issue . So that is the overall project .
+
+06:17:48 PM
+Speaker 1
+Yeah. So it is you contributed . So how much of the work was done by you ?
+
+06:18:32 PM
+Speaker 2
+Uh. So in that I have been working in a rag based the rag based flow and also data validation and the end to end workflow on that. So I tested this end to end workflow of the pipeline, like, uh, we are taking some case IDs. We are entering into that, uh , application. Then we are checking this entire workflow. Like how the anomaly detection is working. What is the the is the ah, correlation. Everything perfectly. And then the diagnosis response has been provided in the structured format like we we use JSON format. And then we are using it in testing tool for a. This like how the LM and the vector basis has been connecting with each other on the rag. Uh . Fetching the top elements and how the hallucination has been going on like that. So I have been working .
+
+06:18:52 PM
+Speaker 1
+Okay, so if you are asked to test the results of AI. What kind of test? You will include to test that AI is working correctly ? Okay. Let's say it is um. An agent that is using AI or it is a classification with LM. So anything with AI, how you are going to test it and what you will include in your test . Okay.
+
+06:19:16 PM
+Speaker 2
+So for that we can use accuracy under . Once . So if we need to test that uh . So we can validate these metrics like a precision recall values. So based upon that we can check the a performance. And then we can go through the generative models like I . Uh correctness and the relevance of the models .
+
+06:19:51 PM
+Speaker 1
+So this is about classification that you are checking now. Response of the agent. So how you are going to , uh, check that? That your agent AI agent is working correctly ?
+
+06:19:58 PM
+Speaker 2
+Okay. So far. And don't look up anywhere. Oh, sorry. Sorry . I'm. Thinking about that.
+
+06:20:33 PM
+Speaker 1
+My agent is, let's say, like a chat. Like ChatGPT. But your company has created some agent, and you want to see and don't type. You want to see that it is working correctly. What you will test as a test is .
+
+06:20:58 PM
+Speaker 2
+So . So if you need to test, we can use some testing tools like. Net and so we can mention the agenda type. And then we can mention the LMS. And then we can mention the vector database. So these are connecting together our . And then we can check the . Uh so. We can use the query. I mean we can use this together in an A and a testing tool. Then we can use the. Uh. Queries things like a. We can give some query inputs and then we can check that whether it is uh, performance is perfectly alright or not.
+
+06:21:26 PM
+Speaker 1
+Okay. One thing I hear is performance testing. Okay, fine. What else ? One answer that I heard is. Is the performance testing. You will check. Let's say. Yeah. How quickly is the response? Okay, fine. What else? You will check . So we can.
+
+06:21:47 PM
+Speaker 2
+Check the, uh, latency check. So how ? When we hit an LM. So how how much time? It is taking to get the response. I mean, to give the response. And we can also to the robustness. Robustness testing like, uh , some edge cases and uninterrupted inputs like that.
+
+06:22:04 PM
+Speaker 1
+Okay. Those .
+
+06:22:08 PM
+Speaker 3
+Uh .
+
+06:22:17 PM
+Speaker 2
+When I didn't , when in depth of that, I have gone through the basic knowledge about that .
+
+06:22:23 PM
+Speaker 1
+Yeah. It's fine. Just I want to see how you see it. So. Yeah. Okay . Uh.
+
+06:22:37 PM
+Speaker 2
+So you are available for face to face interview, right? Because technical interviews, face to face in the only. Yeah. I'm you for that answer .
+
+06:22:39 PM
+Speaker 1
+Okay.
+
+06:22:51 PM
+Speaker 2
+Um. What is the main reason that you want to change your job ? So in my current organization, I've been getting more hands on experience about the automation testing and, uh , data driven. Testing . And also gone through some LMS hands on experience. So I would like to take more hand. I mean, more ownership of that to . To provide some quality products and then to work on a quality team to gain more knowledge about that. And mostly I have been interested in working on a knowledge, uh . And a knowledge applications . And I am checking on looking for that growth. Currently .
+
+06:23:26 PM
+Speaker 1
+Okay.
+
+06:23:44 PM
+Speaker 2
+And what is the latest course that you have taken ? Yeah. So currently I have been going through this, uh, elements and rag based learning how we can advance the ground. This, rag and how how can we reduce this hallucination and the, uh. Like, uh, context window reducing and increase . So I am going through this, uh, courses, and I am also going through this, uh, some testing tools like AWS, bedrock, how we can use AWS bedrock into the, uh, for open. And, uh, uh, hugging face. We use the. Uh, apex. Right. For, uh. Uh, AWS. Bedrock. Also, we can use apex, but it is more flexible than this open air face because there are a lot of models in AWS bedrock. So in that we can use the different models and different, uh, embedding strategies. Also is there. So I am looking into that how we can deploy and how we can use this database better. I database cloud .
+
+06:24:31 PM
+Speaker 1
+Level more comfortable with the developer role or QA role .
+
+06:24:33 PM
+Speaker 2
+Yeah I think. I'm having this at all. But I would like to move to the developer role also .
+
+06:24:46 PM
+Speaker 3
+So it is a good match because it has both. Yeah .
+
+06:24:50 PM
+Speaker 1
+Currently, do you have any offer ? Uh.
+
+06:25:07 PM
+Speaker 2
+Currently I don't I mean I don't see that, but I mean different positions in different interviews. Like, uh, I have cleared the assessment in IBM and I have gone through the assessment and first round of interview in the Apple. So there are different stages in different organizations .
+
+06:25:13 PM
+Speaker 3
+Mm. IBM and Apple. Okay. Good .
+
+06:25:19 PM
+Speaker 1
+All right. So now you can ask your questions. What do you want to know .
+
+06:25:22 PM
+Speaker 2
+Uh, so . Which type of technologies have been working right now in our organization ?
+
+06:25:32 PM
+Speaker 1
+The technologies that we use right now . Yeah. Um, we have we have two main data lakes. Uh, commercial and clinical. And they are based on different technologies. So I will tell generally what , what is there. So we are using Starburst. We are using uh. AWS. Using Azure.
+
+06:26:02 PM
+Speaker 2
+Using Databricks. Are you familiar with Databricks ? Uh. No. I am completely this automation testing. So . Okay. But I, I would like to know about that Databricks also because there are some different layers I have here like gold, silver and uh. All layers in that.
+
+06:26:19 PM
+Speaker 1
+Yes. Yeah. Okay. Good. So, um , what I was saying. Yeah. Uh, so what else we have seen ups . Um. We are currently working on AI agents, so it's important that your latest course was on the rag on NLM and all. Other things. So we are , um. Okay. Nice. We have, um, big projects right now. That are using that. So we are not doing UI. So maybe at some point we will be doing that . UI testing is not what we are focusing on. API is there. It is fine, but um , it's not a web application. It's totally different because because you are working with data lakes. So anything related , how you test the data will be the main focus. That's why it's also important that your SQL knowledge will be sufficient. So if you are asked to come to the next level, you should be prepared to do coding on both Python and SQL. This is a minimal requirement for this position. Sure. And we will have a lot of work on automation this year . We are. Um, um , transition to full automation in everything. That's why we have a lot of work on automation . Uh, so the main framework is pi test. Um, that it can be different. So in Databricks we are using PySpark. Yeah. Um , yes. Um , so what else I can say? I think this is mostly the thing. And the, um, team itself is testing anything in, uh, the company related to data. So you can think of a big company that has different components. Each team has their QA , but the data itself, the following a bit . Big data is in data and analytics team. So anything related to this data lake is the responsibility of our team. So the main thing to test that this data is consistent. Uh. Full. Uh, accurate. And so on. And after that, to work on these new projects that are we developing AI agents, uh, that will be going to data , uh, directly. To use the data that we have. And just answer any kind of questions that our internal users will have. So this is like.
+
+06:29:04 PM
+Speaker 3
+For this here. Yes. So we are developing them and there will be , um, huge scope on testing how they work . So .
+
+06:29:23 PM
+Speaker 1
+It is very important so that you understand what to expect from them and to where there may be some failures so that, um, you will be able not to just use AI, but also test. AI. So this is one of the main directions here. Okay. Any other questions ?
+
+06:29:27 PM
+Speaker 2
+Surrounding.
+
+06:29:30 PM
+Speaker 3
+Okay. Yeah. Sounds good. Thank you.
+
+06:29:33 PM
+Speaker 2
+That the technology has been going through .
+
+06:29:36 PM
+Speaker 1
+Okay. Good. Uh, nice to have this conversation. Thank you for your time. I will contact Aja for, um, further.
+
+06:29:50 PM
+Speaker 3
+Directions. And I will call you. Thanks a lot. Have a good evening. Yeah. Thank you so much . Bye .
+
+06:30:05 PM
+Speaker 2
+Yeah. You just. Until you see. Panel. Now . I'm just thinking about the questions you are asking , and. Okay. I don't know. Don't .
