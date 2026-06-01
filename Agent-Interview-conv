@@ -345,3 +345,53 @@ Directions. And I will call you. Thanks a lot. Have a good evening. Yeah. Thank 
 06:30:05 PM
 Speaker 2
 Yeah. You just. Until you see. Panel. Now . I'm just thinking about the questions you are asking , and. Okay. I don't know. Don't .
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+MYSQL
+-----
+
+Okay, are you familiar with windows function ?
+
+What are they in SQL queries ? Pro number. Rank then?
+
+Have you tested database
+
+So. Let's imagine you have an assignment to create a regression automation. Framework. And it is on . Let's say database though it will be in Data Lake. But let's say the same. So you have . Tables. It is database. So how what is.
+
+The approach for your regression. What exactly you are going to do okay. So first I understand the data structure and schema of the data lake. Like which. What what what type of data it is . And then I will design the test cases for validating key queries. And I use Python libraries like pandas test framework for. But .
+
+Speaker 1
+Okay. Uh, what if you will be told you need to work on the reconciliation? Like quality checks and you have thousands of tables. What checks? You will include ?
+
+Okay. Uh, what if you will be told you need to work on the reconciliation? Like quality checks and you have thousands of tables. What checks? You will include ?
+
+06:13:28 PM
+Speaker 3
+And .
+
+06:13:30 PM
+Speaker 1
+All. Lot of tables. Thousand of. And you need to automate.
+
+06:14:12 PM
+Speaker 2
+Do a quality check . What are your tests? Okay. So I will check the roles count in a source which is target tables like a data completeness. And then I will check the data accuracy like a validate key columns for count matches. Or within that set of acceptable thresholds, especially for numeric or database. And then we can go through with the schema validation. So it confirm the structure of the tables . Column names, data types. Everything should be fine or not . Or and we can check the null null checks like identify expected null or missing values which leads to the uh. Disturbance of this primary case. So primary key should be used for the uh. Identifying the table. And then . Um. And then so we can go to duplicate check. Also duplicate detection like, uh , unintended dupe.
+
+Okay, so if you are asked to test the results of AI. What kind of test? You will include to test that AI is working correctly ? Okay. Let's say it is um. An agent that is using AI or it is a classification with LM. So anything with AI, how you are going to test it and what you will include in your test . Okay.
+
+So this is about classification that you are checking now. Response of the agent. So how you are going to , uh, check that? That your agent AI agent is working correctly ?
+
+
+you should be prepared to do coding on both Python and SQL
+
+
+So the main thing to test that this data is consistent. Uh. Full. Uh, accurate. And so on.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
