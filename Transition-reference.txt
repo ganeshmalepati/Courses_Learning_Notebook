@@ -1,0 +1,730 @@
+To Run TestCase:- 
+
+
+
+". venv/bin/activate
+
+&#x20; pytest --no-dc -s --custom\_testbed=pbs\_testbed.json --log\_directory=/home/chandrasekar\_p/webserver/logs tests/controlstation/test\_control\_station008.py"
+
+
+
+
+
+Contact People
+
+--------------
+
+
+
+1\. girish.nagaraj1@dellteam.com
+
+
+
+2\. runad.khamkar@dell.com
+
+
+
+idrac->cpld->BIOS Updating the server.
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+racadm>>rootshell
+
+
+
+ERROR: Invalid command specified.
+
+
+
+racadm>>
+
+
+
+racadm>>
+
+
+
+racadm>>debug invoke rootshell
+
+
+
+bash-5.2$ su -
+
+
+
+Password:
+
+
+
+&#x20;
+
+Arev image
+
+&#x20;
+
+xrev ->rootshell only
+
+&#x20;
+
+calvin is passwd
+
+
+
+
+
+
+
+HALAccess -write int  HOLD\_S5\_CPLD\_UPD\_RECOVERY 0
+
+&#x20;
+
+HALAccess -write bit FORCE\_PROCHOT\_DBG 1
+
+&#x20;
+
+flag 0
+
+&#x20;
+
+10 ->PowerON state
+
+&#x20;
+
+40 ->BIOS state
+
+&#x20;
+
+80 ->System is up 
+
+&#x20;
+
+&#x20;
+
+/home/root# ip -br add
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+link:- https://agility.aus.amer.dell.com/   -->  DUP file
+
+
+
+""
+
+&#x20;   FPGA\_Firmware\_XH6T2\_WN64\_107.103.000\_A00.EXEext
+
+&#x20;   MD5: 15e15e9f8ceac8637930765aee8fb7a3
+
+&#x20;   SHA1: 8b4372bbeef0cb9879f53fc3f7a462da570539f0
+
+&#x20;   SHA256: e4d179f3e386213bebd4c0827f6264c1c125307c015aebc7e4b27dee162e9c0e
+
+""
+
+
+
+
+
+racadm>>rootshell
+
+sh-5.2# su -
+
+/home/root# thmtest -g plat
+
+
+
+
+
+""
+
+&#x20;   PLATFORM DETAILS
+
+&#x20;   --------------------------------------------------------------------------------
+
+&#x20;   Platform Name/ID/FF   :  Oboe Highend / PS5300, PS9300 / 1.5U
+
+&#x20;   Thermal Table Version :  Maxwell 17G A02 / Template A02 / Platform A00
+
+&#x20;   Platform Owner        :  Removed
+
+&#x20;   Platform Table Date   :  2025-11-20
+
+&#x20;   
+
+&#x20;   --------------------------------------------------------------------------------
+
+&#x20;   VERSION INFORMATION
+
+&#x20;   --------------------------------------------------------------------------------
+
+&#x20;   iDRAC FW Version : 2.05.70.50
+
+&#x20;   iDRAC FW Build # : 14
+
+&#x20;   iDRAC FW Type    : X-Rev
+
+&#x20;   BUILD\_TAG        : local-build-for-palanisamy\_vellaisam
+
+&#x20;   CPLD Version     : 103.101.000
+
+&#x20;   BIOS Version     : 1.0.5
+
+
+
+""
+
+
+
+Image called Arev image -->Production image
+
+&#x20;
+
+Xrev image is Internally developers used image
+
+&#x20;
+
+
+
+{
+
+&#x20; "ImageURI": "http://100.71.136.147/ttt/CPLD\_Firmware\_FRCMF\_WN64\_0.4.0\_A00\_01.EXE",
+
+&#x20; "TranferProtocol": "HTTP",
+
+&#x20; "@Redfish.OperationApplyTime": "Immediate"
+
+}
+
+
+
+
+
+Once we execute the above payload via API we will get:-
+
+
+
+2 -Jobs will be created 
+
+one is actual update the firmware
+
+another is Host reboot it will happen
+
+&#x20;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+LINKS
+
+-----
+
+
+
+Project Repo:- https://eos2git.cec.lab.emc.com/Runad-Khamkar/pbs\_sample
+
+
+
+iDRAC:- https://dell.sharepoint.com/sites/IDRAC842/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FIDRAC842%2FShared%20Documents%2FGeneral%2FProject%20Mgmt%2FAutomation%20Docs\&FilterFields1=DocIcon\&FilterValues1=doc%3B%23docm%3B%23docx%3B%23dot%3B%23dotm%3B%23dotx%3B%23odt\&FilterTypes1=Computed\&viewid=f892c8fe%2D6e2a%2D4aaf%2D83d9%2D10e9812e0118\&p=true\&ct=1780024225701\&or=Teams%2DHL\&LOF=1
+
+
+
+iDRAC Redfish:- https://youtube.com/playlist?list=PLe5xhhyFjDPcUPEcwVd--1pS17nFNiHTd\&si=OUPZ\_JhcH9TfZ4K9
+
+
+
+Booting:- https://youtu.be/XpFsMB6FoOs?si=T4j6m-Dr6rDmWkSp
+
+
+
+Process and Thread:- https://youtu.be/M9HHWFp84f0?si=KTmolSSPfoMA6Da8
+
+
+
+Shell:- https://youtu.be/GtovwKDemnI?si=PfC6IHywJFavEkLc
+
+
+
+OpenBMC Arch:- https://github.com/openbmc/docs/blob/master/architecture/interface-overview.md
+
+
+
+OpenBMC:- https://youtube.com/@openbmc9752?si=5M6vOpljTj-pYFsE
+
+
+
+RACADM CMDS:- https://youtu.be/xYRFTZZsdIM?si=M9dje9VuNAZZokiG
+
+
+
+IPMI Tool Guidance:- https://www.cleverence.com/articles/oracle-documentation/using-ipmitool-to-view-system-information-4827/
+
+
+
+firmware:- https://dell.sharepoint.com/sites/MidRangeHWEng/firmware-eng/Lists/Releases/Forms/AllItems.aspx?viewid=961e7efb%2Da992%2D4e39%2Dbec7%2D784873b97619\&csf=1\&isSPOFile=1\&ovuser=945c199a%2D83a2%2D4e80%2D9f8c%2D5a91be5752dd%2CChandrasekar%2EP1%40dellteam%2Ecom\&OR=Teams%2DHL\&CT=1757478502589\&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA4MTUwMDcxNyIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D\&CID=e940c4a1%2Db0c5%2D9000%2Dd7be%2D7d86a4f8ca05\&cidOR=SPO\&FolderCTID=0x012000C4B815FF9EF5F24A81F1364BAF6367B5
+
+
+
+iDRAC Power Supply:- https://confluence.cec.lab.emc.com/spaces/PFE/pages/1383469599/iDRAC+Power+Supply+Requirements
+
+
+
+
+
+
+
+
+
+REDFISH API LINKS
+-----------------
+
+
+
+1\. https://100.101.24.150/redfish/v1/
+
+
+
+2\. https://10.249.168.96/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate
+
+
+
+3\. https://100.69.94.54/redfish/v1/TaskService/TaskMonitors/JID\_565415672529
+
+
+
+4\. https://100.69.94.54/redfish/v1/TaskService/Tasks
+
+
+
+5\. https://100.69.94.54/redfish/v1/TaskService/Tasks/JID\_565415672529
+
+
+
+6\. https://100.69.94.54/redfish/v1/TaskService/TaskMonitors/JID\_565415672529
+
+
+
+7\. https://10.246.73.155/redfish/v1/Chassis/Enclosure/Sensors
+
+
+
+8\. https://10.246.73.155/redfish/v1/Chassis/Enclosure/Sensors/Drive6Temperature
+
+
+
+9\. https://10.246.73.155/redfish/v1/Managers/LocaliDRAC
+
+
+
+10\. https://10.249.168.96/redfish/v1/UpdateService/Actions/UpdateService.SimpleUpdate
+
+
+
+11\. https://100.101.24.168/redfish/v1/Managers/LocaliDRAC/LogServices/Sel/Entries
+
+
+
+
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+RECORD SESSION DESCRIPTION
+--------------------------
+
+
+
+2nd June
+--------
+
+* There are different releases like Oboe, Bombarde, Trumpet and Harmonica.
+
+* We are using Boomerang for validating the APIs and feature is working or not. We use redfish with RESTful API like GET/POST/DELETE/PUT.
+
+* URI:- https://<bmc\_ip>//redfish/v1/ --> fetch all the info
+
+* All the firmware update, sensor and power supply (DUP file "binary image") all this URI are present inside that and we can get the info about it. 
+
+* For the authentication we used default(Headers) Basic Auth which contains username: root and password Calvin.
+
+* The default body type is JSON.
+
+* wget is a command-line utility used to download files from the internet. It supports protocols like HTTP, HTTPS, and FTP and works in the background, 	making it useful for automation and scripting.
+
+* wget https://100.69.94.54/redfish/v1/TaskService/Tasks
+
+* To get the image move to API  body, then open them in the chrome http://100.71.136.147/fix (contains downloaded images). Once it's successful we can get the job is successfully created inside the "Task Service, Task Monitors" in the API URI
+
+* URI :- "Image URI": "http://100.71.136.147/fix/PCIE\_FPGA\_Firmware\_P3MX8\_WN64\_0.2.0\_X03.EXE", 
+
+
+JOB VIEWS
+---------
+
+* racadm job queue view --> fetch and will print all jobs
+
+* racadm job queue view -i <job-id> -->particular job will show
+
+* Powerstatus ,driver and logs event and io cards 
+
+
+
+
+
+3rd June
+--------
+
+* debug control -l10 -s5 -s47 -o2
+
+* tail -f /var/log/idraclogs
+
+* HALAccess -write int  HOLD\_S5\_CPLD\_UPD\_RECOVERY 0
+
+* HALAccess -write bit FORCE\_PROCHOT\_DBG 1
+
+
+
+RACADM COMMANDS
+---------------
+
+* racadm set system.thermalsettings.ThermalShutdownConfiguredTimeSeconds 300
+
+* racadm get BIOS.BiosBootSettings.BootMode
+
+* racadm get BIOS.ProcSettings.LogicalProc
+
+* racadm serveraction powerstatus
+
+* racadm storage get pdisks -o -p status
+
+* thmtest -g plat
+
+* platdTest -z
+
+
+URI for tasks --> https://100.69.94.54/redfish/v1/TaskService/Tasks
+
+URI for Sensors --> https://10.246.73.155/redfish/v1/Chassis/Enclosure
+
+
+
+* SEL logs is means system Event logs
+* SEL Logs - TSR collections 
+* URI https://10.246.73.155/redfish/v1/Managers/LocaliDRAC
+
+
+
+There are two nodes like server 1 and server 2. 
+
+
+
+Modification of URI and for fetching the info for different components like as mentioned above for Tasks, and Enclosure for sensors.
+
+
+
+Enter into the BMC, we can all the sensors, power supply, tasks and other components inside the Linux terminal instead of UI in chrome using boomerang URIs.
+
+
+
+" busctl tree com.dell.idrac.pldmmodel "
+
+
+
+
+
+
+
+
+
+
+
+4th June
+
+\--------
+
+
+
+Flow to update the services or servers image like (firmware image, BIOS image, CPLD image)  IDRAC ---> CPLD ---> BIOS 
+
+
+
+Once we update the image it will create two things 
+
+* Image called Arev image -->Production image
+* Xrev image is Internally developers used image
+
+&#x20;
+
+
+
+After updating the any images two jobs will be created 
+
+&#x20;
+
+* one is actual update the firmware
+* another is Host reboot it will happen
+
+&#x20;
+
+
+
+{ 
+
+&#x09;\[Job ID=JID\_805523632011]
+
+&#x09;Job Name=Firmware Update: CPLD (FRCMFA00)
+
+&#x09;Status=Running
+
+&#x09;Scheduled Start Time=\[Now]
+
+&#x09;Expiration Time=\[Not Applicable]
+
+&#x09;Actual Start Time=\[Thu, 04 Jun 2026 05:53:30]
+
+&#x09;Actual Completion Time=\[Not Applicable]
+
+&#x09;Message=\[PR20: Job in progress.]
+
+&#x09;Percent Complete=\[7]
+
+&#x09;----------------------------------------------------------
+
+&#x09;\[Job ID=RID\_805523907002]
+
+&#x09;Job Name=Reboot: Power cycle
+
+&#x09;Status=Reboot Completed
+
+&#x09;Scheduled Start Time=\[Now]
+
+&#x09;Expiration Time=\[Not Applicable]
+
+&#x09;Actual Start Time=\[Thu, 04 Jun 2026 05:53:13]
+
+&#x09;Actual Completion Time=\[Thu, 04 Jun 2026 05:53:18]
+
+&#x09;Message=\[RED030: Reboot is complete.]
+
+&#x09;Percent Complete=\[100]
+
+}
+
+
+
+First job is more priority so host reboot is the first run once completed then only next job will start it  that is actually firmware iamge
+
+
+
+
+
+we download the software like firmware, BIOS, CPLD things inside our system then we need to add them in the Linux system using scp (secure copy protocol) using "WinSCP". 
+
+
+
+To get the image or software (BIOS, CPLD and other things) info we can go to the link (https://agility.aus.amer.dell.com/) and search it.
+
+
+
+High end (more features) and low end (less features) most of the updates has been flashed using the High end. Before flashing the updates we need to verify that whether it's high or low end type, then we can flash it.
+
+
+
+
+
+Once we have downloaded and copy the images into our Linux system on the "ip addres /logs" inside that we can see the images that we have attached then we can copy the link address and then open the terminal, run below command
+
+" wget "http://100.71.136.147/ttt/CPLD\_Firmware\_FRCMF\_WN64\_0.4.0\_A00\_01.EXE "
+
+
+
+
+
+
+
+
+
+
+
+5th June
+
+\--------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8th June 
+
+\--------
+
+
+
+1\. Explained about how to clone the git repo and where the git repo present and it's workflow.
+
+2\. Mentiond how to check the Requirements of the test case generation and it's constraints for the test scenario
+
+3\. Explained the system power on insertion and removal 
+
+4\. Explain to check the logs and how to automate them, Using the Message ID, check them in REDFISH API.
+
+5\. There are different Platforms or Releases (like Oboe, Bombarde, trumpet, harmonica etc)
+
+
+
+
+
+
+
+9th June
+
+\--------
+
+
+
+1\. Explained about the Windsurf tool usage for test script genereation by providing the Requirements and the instructions to generate the test case
+
+2\. Also gone through about how to debug via Windsurf and through manually like running the test case in local using pytest, and then check the error or      	failure in the <ip\_logs> search in chrome,to check failure or error issues for debug. 
+
+3\. Explained how to connect the Windsurf to Linux and also to the IDE or tool we are using for test. We will get the username and hostname for Windsurf 	Login and access for script generation.
+
+4\. Gone through how to raise the PR and test run command like  "pytest --no-dc -s --custom\_testbed=pbs\_testbed.json --	log\_directory=/home/chandrasekar\_p/webserver/logs tests/controlstation/test\_control\_station008.py"
+
+5\. Explained what is the --custom\_testbed means it will store the "BMC, HOST IP Address and also info about the BMC and other components in a json format"
+
+6\. This "--log\_directory" is used to store the logs and then follow up the test case path to run it.
+
+7\. To get connect with Windsurf we need to add "ssh<username>@<hostname>" in CLI, in the VS code or IDE we need to add the extension "remote SSH" the we can 	login.
+
+
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Checking Reboot Process, releases and IP address:-
+
+
+
+racadm>>
+
+racadm>>rootshell
+
+sh-5.2# su -
+
+/home/root# get-system-name
+
+Trumpet\_PCIe\_Direct
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\------------------------------------------------------------------------------------------------------------------------------------------------------------
+
