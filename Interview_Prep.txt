@@ -1,0 +1,90 @@
+I'm Ganesh Malepati, and currently working as a Software Engineer at Capgemini with around 2 years of experience in UI and API automation testing.
+
+My primary expertise is in Python, Pytest, Selenium, and REST API automation using the Requests library. In my current role, I’ve been involved in designing, maintaining, and scaling automation test suites for enterprise applications. I have worked extensively on regression automation, framework enhancement, test stability improvement, and CI/CD integration.
+
+One of the major projects I worked on was the Nutanix Cloud Management project, where I automated more than 20 UI and API test cases for critical business workflows, achieving around 30% regression coverage. One of my key contributions in that project was reducing flaky test failures and false positives by improving synchronization handling, dynamic element management, and reusable framework utilities. I also contributed to enhancing the existing automation framework by adding new functionalities based on evolving client requirements, which improved the adaptability and scalability of the automation suite.
+
+Along with automation testing, I’ve also worked on integrating automated test suites into Jenkins pipelines for continuous integration and nightly regression execution, helping development teams receive faster feedback on code quality. I’m also familiar with GitHub, Linux environments, and have foundational exposure to Docker and AWS Cloud concepts.
+
+Recently, I also got an opportunity to work on an AI-driven AutoHeal project, where we validated anomaly detection and diagnosis pipelines using sensor data, RAG-based grounding, and Small Language Models like LLaMA and Phi models. In that project, I worked on validating end-to-end workflows, analyzing telemetry logs, verifying structured diagnosis outputs, and ensuring consistency between CLI and UI-based systems. That experience significantly improved my debugging, analytical thinking, and system-level testing skills.
+
+One of my strengths is my ability to learn new technologies quickly and adapt to different project environments. I enjoy solving complex automation challenges, debugging failures, and collaborating closely with developers and QA teams to improve overall product quality and reliability.
+
+Apart from work, I enjoy playing table tennis, which has helped me develop focus, quick decision-making, and consistency under pressure. I also enjoy reading books related to technology and personal development because I believe continuous learning is very important in the software industry. Additionally, I enjoy traveling and exploring new places, which has helped me become more adaptable and open to working with people from different backgrounds and perspectives.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+June 21 (Sunday) - Non-stop 
+
+2.40 PM - 3.30 PM
+
+Tirupati - Bengaluru 
+
+Price - 11,705
+
+June 22 (Monday) - Non-stop 
+
+2.40 PM - 3.30 PM
+
+Tirupati - Bengaluru 
+
+Price - 12,879
+
+June 23 (Tuesday) - Non-stop 
+
+2.40 PM - 3.30 PM
+
+Tirupati - Bengaluru 
+
+Price - 10,659
+
+
+June 24 (Wednesday) - Non-stop 
+
+2.40 PM - 3.30 PM
+
+Tirupati - Bengaluru 
+
+Price - 7,323
+
+
+
+Date:- June 27 (Sat) - Non-stop
+Timing:- 2.40 PM - 3.30 PM (50 min)
+Location:- Tirupati - Bengaluru
+Price - 5,258
+
+
+Date:- June 28 (Sunday) - Non-stop
+Timing:- 2.40 PM - 3.30 PM
+Location:- Tirupati - Bengaluru
+Price - 4,824
+
+
+
+
+Date:- June 21 (Sun) - 2 stops
+Timing:- 9hrs 30 min Journey
+Location:- Tirupati - Bengaluru --> Tirupati -> HYD --> Mumbai --> Bengaluru
+Price - 27,019
+
+
+
+
+
+Date:- June 21 (Sun) - 2 stops
+Timing:- 7hrs 30 min Journey
+Location:- Tirupati - Bengaluru --> Tirupati -> HYD --> Delhi --> Bengaluru
+Price - 19,083
